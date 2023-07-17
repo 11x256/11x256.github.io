@@ -1,11 +1,14 @@
 ---
-layout: post
 title:  "Frida hooking android part 1"
 date:   2017-05-05 23:19:33 +0200
 categories: Frida
 description: In this post and the next few posts we will talk about Frida, the Dynamic Binary Instrumentation tool.
-tags: Frida android reverse engineering
+tags: 
+    - Frida
+    - android 
+    - reverse engineering
 ---
+
 ## **Introduction**
 
 In this post and the next few posts we will talk about **[Frida](https://www.frida.re/)** the Dynamic Binary Instrumentation tool, I will show you some examples that highlight what Frida can do, We will work on small android applications that i wrote, the source code of these apps will be available on github, so let's start.
