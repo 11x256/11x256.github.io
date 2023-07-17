@@ -6,7 +6,10 @@ description: In this post and the next few posts we will talk about Frida, the D
 tags: 
     - Frida
     - android 
-    - reverse engineering
+    - reverse engineering    
+redirect_from:
+  - /Frida-hooking-android-part-1/
+
 ---
 
 ## **Introduction**
