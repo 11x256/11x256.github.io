@@ -23,6 +23,7 @@ twitter_username: 11x256
 github_username: 11x256
 minimal_mistakes_skin: default
 search: true
+google_analytics: G-KR510R6EZR
 
 # Build settings
 markdown: kramdown
@@ -56,6 +57,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
   name   : "abdo"
