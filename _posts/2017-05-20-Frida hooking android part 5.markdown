@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Frida hooking android part 5: Bypassing AES encryption"
 date:   2017-06-28 2:00:00 +0200
 categories: Frida Android-reversing
