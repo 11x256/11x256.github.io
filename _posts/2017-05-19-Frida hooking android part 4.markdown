@@ -4,6 +4,9 @@ date:   2017-05-19 2:29:00 +0200
 categories: Frida Android-reversing 
 description: We will exchange data between the JS code injected into the android app and the python code.
 tags: Frida android reverse engineering
+redirect_from:
+  - /Frida-hooking-android-part-4/
+
 ---
 ## **Introduction**
 
