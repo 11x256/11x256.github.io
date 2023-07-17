@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Frida hooking android part 2"
 date:   2017-05-06 16:00:00 +0200
 categories: Frida
