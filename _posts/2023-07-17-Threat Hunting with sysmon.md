@@ -5,6 +5,11 @@ categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
+redirect_from:
+  - /post/123456789/
+  - /post/123456789/my-amazing-post/
+  - /threat_hunting/1/
+
 ---
 ## **Introduction**
 
