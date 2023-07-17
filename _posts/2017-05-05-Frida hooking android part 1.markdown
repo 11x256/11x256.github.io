@@ -60,7 +60,7 @@ Function `fun` will print the sum of the two arguments (80), logs can be viewed 
 
 
 
-![output of unmodified code]({{site.url}}/images/1/1.PNG)
+![output of unmodified code](/images/1/1.PNG)
 
 Now, we will use frida to change this result and these are the steps that we will follow:
 
