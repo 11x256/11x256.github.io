@@ -5,6 +5,9 @@ categories: Frida Android-reversing
 description: Bypassing android encryption , obtaining data in clear text.
 tags: Frida android reverse engineering
 published: true
+redirect_from:
+  - /Frida-hooking-android-part-5/
+
 ---
 ## **Introduction**
 
