@@ -151,11 +151,11 @@ Java.perform(function x(){ //Silently fails without the sleep from the python co
 
 
 
-The function is now called with our arguments(2,5)![output of unmodified code]({{site.url}}/images/1/2.PNG)
+The function is now called with our arguments(2,5)![output of unmodified code](/images/1/2.PNG)
 
 The output of console.log appears in the python console.
 
-![output of console.log]({{site.url}}/images/1/3.PNG)
+![output of console.log](/images/1/3.PNG)
 
 ## Files
 
