@@ -28,7 +28,9 @@ twitter_username: 11x256
 github_username:  11x256
 google_analytics: G-KR510R6EZR
 # Build settings
-remote_theme: jekyll/minima
+#remote_theme: jekyll/minima
+remote_theme: mmistakes/minimal-mistakes
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
