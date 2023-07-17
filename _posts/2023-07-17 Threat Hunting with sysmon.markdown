@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Threat Hunting with sysmon 101"
+date:   2023-07-17 22:40:00 +0200
+categories: Notes
+description: Threat hunting with sysmon 
+tags: Threat hunting sysmon Threat-hunting Threathunting windows logs ELK
+published: true
+---
+## **Introduction**
+
+I will begin a new series of blog posts where I engage in threat hunting using sysmon logs. Throughout the process, I will utilize free tools and Python to conduct the hunts. The objective is to document and share my previous knowledge and insights.
+
+
+
+
+
+Stay tuned.
