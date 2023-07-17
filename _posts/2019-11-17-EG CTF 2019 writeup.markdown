@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "EG-CTF 2019 'DGA' challenge writeup"
 date:   2019-11-17 22:40:00 +0200
 categories: Notes
