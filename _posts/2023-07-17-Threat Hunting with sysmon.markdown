@@ -2,7 +2,7 @@
 layout: post
 title:  "Threat Hunting with sysmon 101"
 date:   2023-07-17 11:40:00 +0200
-categories: Notes
+categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
