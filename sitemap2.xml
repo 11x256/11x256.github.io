@@ -9,57 +9,77 @@
 
 <url>
   <loc>https://www.infosec-blog.com/</loc>
-  <lastmod>2023-07-17T19:53:56+00:00</lastmod>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.infosec-blog.com/posts/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.infosec-blog.com/categories/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.infosec-blog.com/tags/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.infosec-blog.com/about/</loc>
-  <lastmod>2023-07-17T19:53:56+00:00</lastmod>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/jekyll/update/2023/07/17/welcome-to-jekyll.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/jekyll/update/welcome-to-jekyll/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/threat_hunting/2023/07/17/Threat-Hunting-with-sysmon.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/threat_hunting/Threat-Hunting-with-sysmon/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/notes/2019/11/17/EG-CTF-2019-writeup.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/notes/EG-CTF-2019-writeup/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/notes/2019/10/14/Things-i-forget.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/notes/Things-i-forget/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/frida/android-reversing/2017/06/28/Frida-hooking-android-part-5.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/blog/welcome-to-jekyll/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/frida/android-reversing/2017/05/19/Frida-hooking-android-part-4.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/frida/android-reversing/Frida-hooking-android-part-5/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/frida/2017/05/11/Frida-hooking-android-part-3.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/frida/android-reversing/Frida-hooking-android-part-4/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/frida/2017/05/06/Frida-hooking-android-part-2.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/frida/Frida-hooking-android-part-3/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.infosec-blog.com/frida/2017/05/05/Frida-hooking-android-part-1.html</loc>
-  <lastmod>2023-07-17T19:53:57+00:00</lastmod>
+  <loc>https://www.infosec-blog.com/frida/Frida-hooking-android-part-2/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.infosec-blog.com/frida/Frida-hooking-android-part-1/</loc>
+  <lastmod>2023-07-17T22:39:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
