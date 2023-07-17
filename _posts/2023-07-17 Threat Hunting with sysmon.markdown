@@ -4,7 +4,7 @@ title:  "Threat Hunting with sysmon 101"
 date:   2023-07-17 22:40:00 +0200
 categories: Notes
 description: Threat hunting with sysmon 
-tags: Threat hunting sysmon Threat-hunting Threathunting windows logs ELK
+tags: Threat hunting sysmon Threathunting windows logs ELK
 published: true
 ---
 ## **Introduction**
