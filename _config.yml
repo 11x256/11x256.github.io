@@ -18,7 +18,7 @@ email: a.hesham93@gmail.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://11x256.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Yet another blog about Infosec, malware , and threat hunting 
+  Yet another blog about Infosec, malware, android security, and threat hunting & detection 
 twitter_username: 11x256
 github_username: 11x256
 minimal_mistakes_skin: default
