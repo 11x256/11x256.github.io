@@ -1,6 +1,6 @@
 ---
 title: "Threat Hunting with sysmon 101 part 1 sysmon installation"
-date: 2023-07-17 11:40:00 +0200
+date: 2024-02-21 11:40:00 +0200
 categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
@@ -19,7 +19,7 @@ To install Sysmon on a Windows system, follow these steps:
 1. **Download Sysmon**: Visit the official Sysinternals Sysmon page to download the latest version of Sysmon.
 https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
 
-![download!](/assets/images/th1/1.png")
+![download!](/assets/images/th1/1.png)
 
 2. **Extract the ZIP file**: After downloading Sysmon, extract the contents of the ZIP file to a folder on your computer.
 
