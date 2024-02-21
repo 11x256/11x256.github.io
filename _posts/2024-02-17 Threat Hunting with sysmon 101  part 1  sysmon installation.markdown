@@ -19,6 +19,7 @@ To install Sysmon on a Windows system, follow these steps:
 
 1. **Download Sysmon**: Visit the official Sysinternals Sysmon page to download the latest version of Sysmon.
 https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+![download!](images/3/th_1_.png")
 
 2. **Extract the ZIP file**: After downloading Sysmon, extract the contents of the ZIP file to a folder on your computer.
 
