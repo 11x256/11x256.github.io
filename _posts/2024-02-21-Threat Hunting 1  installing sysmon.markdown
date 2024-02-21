@@ -28,7 +28,10 @@ To install Sysmon on a Windows system, follow these steps:
 
 5. **Install Sysmon**: Run the following command to install Sysmon: `sysmon.exe -i -accepteula`
 This command installs Sysmon as a Windows service and accepts the end-user license agreement (EULA).
+![install sysmon!](/assets/images/th1/2.png)
 
 
-6. **Verify installation**: You can verify that Sysmon has been installed correctly by checking the Windows Event Viewer. Look for event logs with the source "Microsoft-Windows-Sysmon" to confirm that Sysmon is running and logging events.
+6. **Verify installation**: You can verify that Sysmon has been installed correctly by checking the Windows Event Viewer. Look for event logs with the source "Microsoft-Windows-Sysmon" to confirm that Sysmon is running and logging events. For example, i opened notepad.exe , and was able to find it in the sysmon logs.
+![test sysmon](/assets/images/th1/3.png)
+
 
