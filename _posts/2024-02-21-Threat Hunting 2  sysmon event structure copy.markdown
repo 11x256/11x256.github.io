@@ -1,5 +1,5 @@
 ---
-title: "Threat Hunting with sysmon 101 part 3: Process creation event"
+title: "Threat Hunting with sysmon 101 part 2: Process creation event"
 date: 2024-02-21 11:40:00 +0200
 categories: Threat_hunting
 description: Threat hunting with sysmon 
