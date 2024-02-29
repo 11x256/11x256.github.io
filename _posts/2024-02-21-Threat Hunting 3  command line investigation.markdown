@@ -1,17 +1,18 @@
 ---
-title: "Threat Hunting with sysmon 101 part 2: Process creation event"
+title: "Threat Hunting with sysmon 101 part 3: Command line investigation"
 date: 2024-02-21 11:40:00 +0200
 categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
-published: true
+published: false
 ---
-# **Introduction**
 
-In this article, we'll explore the structure of process creation event (event_id == 1).
+In this article, we'll look at Mitre technique T1059.001 [text](https://attack.mitre.org/techniques/T1059/001/). 
 
-# Process creation event
-The process creation event, typically denoted as Event ID 1 in Sysmon, is a critical aspect of system monitoring and security analysis. When a new process is spawned on a Windows system, Sysmon captures and logs detailed information about this event, providing valuable insights into the execution of programs and potential security threats. Here's a comprehensive description of the process creation event:
+# Overview of T1059.001
+T1059.001 is categorized under the Execution tactic in the MITRE ATT&CK framework. It involves the use of command-line interfaces (CLIs) or scripting interpreters to execute commands or scripts, which can be leveraged by adversaries for various purposes, including lateral movement, privilege escalation, and data exfiltration. Common command-line interfaces and scripting interpreters utilized by adversaries include PowerShell, Command Prompt (cmd.exe), Bash, Python, and others.
+
+The example we have here will be a powershell shell command that is used to download and execute a powershell script hosted on github. The downloaded script in a test script that will just open notepad.exe when executed.
 
 - **Event ID**: The event ID for process creation in Sysmon is 1. This ID serves as a unique identifier to differentiate process creation events from other types of events logged by Sysmon.
 
