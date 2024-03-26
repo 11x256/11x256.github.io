@@ -4,7 +4,7 @@ date: 2024-03-25 22:40:00 +0200
 categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
-published: false
+published: true
 ---
 
 In the past article, we used powershell scripting to filter the events and perform basic querying, in this article we will load sysmon logs into python, and explore some powerful queries that we can apply to our data to gain better understanding of it.
