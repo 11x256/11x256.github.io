@@ -50,13 +50,13 @@ df = pd.DataFrame(events_list)
 print('Loaded %d events' % len(df))
 ```
 
-# Use case: Search for execute .ps1 files
-
+# Usecase: Search for execute .ps1 files
+We can use python to do case insensitive searches in the data, in this example, we are using regex to search the "CommandLine" field for powershell executing ps1 script files.
 ```
 filtered_df = df[(df['CommandLine'].notna()) & (df['CommandLine'].str.match('.*PoWeRSHeLl.*pS1.*',case=0))][['EventID','ProcessId','Image','CommandLine']]
 print(tabulate.tabulate(filtered_df ,headers= filtered_df.columns))
 ```
-
+And the result shows the execution of the exercise file we used in the last post.
 ```
         EventID    ProcessId  CommandLine
 ----  ---------  -----------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ print(tabulate.tabulate(filtered_df ,headers= filtered_df.columns))
 ```
 
 
-# Use case: Create Process Tree
+# Usecase: Create Process Tree
 Another thing we can try now is to create a process tree to show the relationships between the processes.
 In order to create a process tree, we will need 2 things:
 - identify root nodes, these nodes (processes) don't have a parent, this can be either due to missing data, or because thats the first process created by the OS.
