@@ -1,6 +1,6 @@
 ---
 title: "Threat Hunting with sysmon 101 part 4: Loading events in pandas dataframe"
-date: 2024-03-26 11:40:00 +0200
+date: 2024-03-25 22:40:00 +0200
 categories: Threat_hunting
 description: Threat hunting with sysmon 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
