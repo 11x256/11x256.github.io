@@ -99,20 +99,20 @@ for i in df[df['EventID'] == "1" ].itertuples():
 
 ```
 roots = []
-childs = {}
+children = {}
 
 for i in nodes:
     if nodes_guids.get(i['ParentProcessGuid'] , 0 ) == 0:
         roots.append(i)
     else:
-        if i['ParentProcessGuid']  not in childs:
-            childs[i['ParentProcessGuid'] ] = []
-        childs[i['ParentProcessGuid'] ].append(i)
+        if i['ParentProcessGuid']  not in children:
+            children[i['ParentProcessGuid'] ] = []
+        children[i['ParentProcessGuid'] ].append(i)
 
 
 ```
 
-This code will create a list of roots, nodes without a parent in our set of data. And it will create a list of childs for each parent
+This code will create a list of roots, nodes without a parent in our set of data. And it will create a list of children for each parent
 
 ## The third step: Print the tree
 Now, we have every thing ready, we just need to print the data using recursion. Recursion is used in order to print the data in the required order, we need to print the root, then the first child, then the first child of the first child, and so on...
@@ -145,7 +145,7 @@ root
 ```
 def print_node(node, indent =0):
     print(' '*indent , node['Name'] , node['ProcessId'])
-    for j in childs.get(node['ProcessGuid'] , []):
+    for j in children.get(node['ProcessGuid'] , []):
         print_node(j, indent=indent+4)
 for i in roots:
     print_node(i)
