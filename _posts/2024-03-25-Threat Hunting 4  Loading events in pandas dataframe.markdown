@@ -50,7 +50,7 @@ df = pd.DataFrame(events_list)
 print('Loaded %d events' % len(df))
 ```
 
-# Usecase: Search for execute .ps1 files
+# Usecase: Search for execution of .ps1 files
 We can use python to do case insensitive searches in the data, in this example, we are using regex to search the "CommandLine" field for powershell executing ps1 script files.
 ```
 filtered_df = df[(df['CommandLine'].notna()) & (df['CommandLine'].str.match('.*PoWeRSHeLl.*pS1.*',case=0))][['EventID','ProcessId','Image','CommandLine']]
