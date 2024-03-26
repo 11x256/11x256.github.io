@@ -20,7 +20,7 @@ The process creation event, typically denoted as Event ID 1 in Sysmon, is a crit
 - **Process Information**:
   - **Process Name**: The name of the newly created process, which provides insight into the executable or application being launched.
   - **Process ID (PID)**: A unique identifier assigned to the newly created process by the operating system. PID helps in tracking and referencing the process throughout its lifecycle.
-  - **ProcessGuid**: is a unique value for this process across a domain to make event correlation easier. PID is not unique, and it can be reused on the same,which cancause confusion in investigations. Thats why microsoft added the processguid field, which is a unique alternative to the PID.
+  - **ProcessGuid**: is a unique value for this process across a domain to make event correlation easier. PID is not unique, and it can be reused on the same,which can cause confusion in investigations. Thats why microsoft added the process guid field, which is a unique alternative to the PID.
   - **Parent Process Name**: The name of the parent process that initiated the creation of the new process. Understanding the parent process can reveal the origin of the execution chain.
   - **Parent Process ID (PPID)**: The PID of the parent process. Knowing the PPID allows analysts to map the relationship between the parent and child processes.
   - **ParentProcessGuid**: Same as ProcessGuid, but for the parent process. Relying on PID and PPID to map relationships between process will not be accurate in all cases. GUIDs should be used instead.

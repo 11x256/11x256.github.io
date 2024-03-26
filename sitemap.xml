@@ -32,6 +32,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>
+      https://www.infosec-blog.com/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/</loc>
+    <lastmod>2024-03-26T14:25:32+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://www.infosec-blog.com/threat_hunting/Threat-Hunting-2-sysmon-event-structure/</loc>
     <lastmod>2024-02-29T14:25:32+00:00</lastmod>
     <priority>0.80</priority>
@@ -91,6 +97,5 @@
     <lastmod>2024-02-29T14:25:32+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-
 
 </urlset>
