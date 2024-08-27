@@ -6,16 +6,16 @@ description: Threat hunting with sysmon
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-
+# Threat Hunting with sysmon: Command line investigation
 In this article, we'll look at Mitre technique T1059.001 [Command and Scripting Interpreter: PowerShell](https://attack.mitre.org/techniques/T1059/001/). We will download and execute a batch file [T1105: Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/), and we will look at sysmon logs to see the articats created from such activity.
 
-# Overview of T1059.001
+## Overview of T1059.001
 T1059.001 is categorized under the Execution tactic in the MITRE ATT&CK framework. It involves the use of command-line interfaces (CLIs) or scripting interpreters to execute commands or scripts, which can be leveraged by adversaries for various purposes, including lateral movement, privilege escalation, and data exfiltration. Common command-line interfaces and scripting interpreters utilized by adversaries include PowerShell, Command Prompt (cmd.exe), Bash, Python, and others.
 
-# Execution 
+## Execution 
 The exercise file can be downloaded from [here](https://github.com/11x256/11x256.github.io/blob/test/assets/exercise/th3/1.bat). its a simple batch script that will download a powershell script from github. This powershell script will run notepad.exe if it gets downloaded and executed successfully.
 
-# Hunting Queries
+## Hunting Queries
 So, to find such technique in sysmon logs, we can try a few different things:
 - Identify newly downloaded files, and search for any process creation events that involves any one of those files
   - We cannot run this query right now, as sysmon is not logging filewrites by default.
@@ -26,7 +26,7 @@ So, to find such technique in sysmon logs, we can try a few different things:
   - This behaviour will exist if the attacker download and executed the file from within the browser
   
 
-## Query 1: Files executed from within the downloads folder
+### Query 1: Files executed from within the downloads folder
 To search for events matching this rule, we will use powershell to filter sysmon events. In order to do that, we can use the **CommandLine** field in sysmon process creation event as follows. Make sure to run in powershell with admin rights.
 
 ```
@@ -76,7 +76,7 @@ ParentUser: DESKTOP-D3OJRQ4\abdo-pc
 ```
 As shown in the output above, **ParentImage** chrome.exe executed cmd.exe in order to run 1.bat file, which is stored in the downloads folder. Also, we can see that the process **Image** (cmd.exe) is not stored in the downloads folder, its the script that is getting execute that is stored in the downloads folder.
 
-## Query 2: Search for powershell processes with urls in command line
+### Query 2: Search for powershell processes with urls in command line
 The script for this hunt will use the same fields from the previous hunt. We will search for powershell.exe process with the word "http" in the command line.
 ```
 $logs= Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1}
@@ -135,7 +135,7 @@ The output indeeds looks very suspicious, we can see a url pointing to  a .ps1 f
 
 All of these keywords are required for the attack to be successful and the are very commonly used to identify this type of attack. As can be seen [here](https://github.com/search?q=repo%3AAzure%2FAzure-Sentinel%20IEX&type=code) in azure sentinel repo of threat hunting rules.
 
-## Query 3: Search for powershell processes with urls in command line
+### Query 3: Search for powershell processes with urls in command line
 For this one we will use **ParentImage** and **CommandLine** fields as follows:
 ```
 $logs= Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1}
@@ -185,7 +185,7 @@ ParentUser: DESKTOP-D3OJRQ4\abdo-pc
 
 Handling False positives is a regular task in threat hunting, for example, we can fine tune this rule by filtering for extra fields to reduce FPs, like removing entries where both the parent and the child is chrome.exe.
 
-# Extra Task:
+## Extra Task:
 Lets also check the behaviour of the .ps1 file that got download from github. We can do that by finding all processes created where the parent is the powershell process that executed that .ps1 file.
 ```
 $logs= Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1}
