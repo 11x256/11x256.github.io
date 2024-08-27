@@ -6,14 +6,14 @@ description: Threat hunting with sysmon
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-# **Introduction**
+## Threat Hunting with sysmon: sysmon installation
 
 In this article, we'll explore Sysmon, install it, and ensure its working properly.
 
-# What is Sysmon?
+## What is Sysmon?
 Sysmon, short for System Monitor, is a powerful Windows system service and device driver that monitors and logs system activity to the Windows event log. Developed by Microsoft's Sysinternals team, Sysmon provides detailed information about process creations, network connections, file modifications, registry modifications, and more. It is commonly used for security monitoring, threat detection, and forensic analysis on Windows systems.
 
-# Installing Sysmon
+## Installing Sysmon
 To install Sysmon on a Windows system, follow these steps:
 
 1. **Download Sysmon**: Visit the official Sysinternals Sysmon page to download the latest version of Sysmon
