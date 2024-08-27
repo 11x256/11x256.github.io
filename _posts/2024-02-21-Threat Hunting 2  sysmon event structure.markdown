@@ -6,11 +6,11 @@ description: Threat hunting with sysmon
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-# **Introduction**
+# Threat Hunting with sysmon: Process creation event
 
 In this article, we'll explore the structure of process creation event (event_id == 1).
 
-# Process creation event
+## Process creation event
 The process creation event, typically denoted as Event ID 1 in Sysmon, is a critical aspect of system monitoring and security analysis. When a new process is spawned on a Windows system, Sysmon captures and logs detailed information about this event, providing valuable insights into the execution of programs and potential security threats. Here's a comprehensive description of the process creation event:
 
 - **Event ID**: The event ID for process creation in Sysmon is 1. This ID serves as a unique identifier to differentiate process creation events from other types of events logged by Sysmon.
@@ -31,7 +31,7 @@ The process creation event, typically denoted as Event ID 1 in Sysmon, is a crit
   - **User**: The user account under which the new process was created. User context is essential for determining privileges, permissions, and potential unauthorized activity.
   - **Logon ID**: A unique identifier associated with the user's logon session. Logon ID helps in linking process creation events to specific user sessions, aiding in user attribution and accountability.
 
-# Example of a process creation event
+## Example of a process creation event
 Lets use this command to get one event with event_id ==1 (process creation event).  
 `(Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1} -MaxEvents 1).message`
 This would print output like this:
