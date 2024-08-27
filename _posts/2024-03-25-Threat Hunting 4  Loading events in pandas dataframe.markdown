@@ -6,10 +6,10 @@ description: Threat hunting with sysmon
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-
+# Loading sysmon events in pandas dataframe
 In the past article, we used powershell scripting to filter the events and perform basic querying, in this article we will load sysmon logs into python, and explore some powerful queries that we can apply to our data to gain better understanding of it.
 
-# Exporting events to xml
+## Exporting events to xml
 The first step is to export sysmon events from the event log in xml format. This can be done either using get-winevent, or wevtutil. But, it seems that wevtutil is much faster .
 
 This command uses **wevtutil.exe** to dump the logs to **exported-eventlog.xml** file on the desktop in XML format.
@@ -23,7 +23,7 @@ Or, this slower version that uses **Get-WinEvent** powershell command
 
 Make sure to run these commands as admin in order to export the logs properly.
 
-# Loading Events in python
+## Loading Events in python
 Parsing XML files in python is easy, we just need to know which nodes/attributes are useful for us, this code snipper will load the xml file, iterate over each event, extract some data from each event, and then store load every thing in pandas dataframe.
 
 ```
@@ -50,7 +50,7 @@ df = pd.DataFrame(events_list)
 print('Loaded %d events' % len(df))
 ```
 
-# Usecase: Search for execution of .ps1 files
+## Usecase: Search for execution of .ps1 files
 We can use python to do case insensitive searches in the data, in this example, we are using regex to search the "CommandLine" field for powershell executing ps1 script files.
 ```
 filtered_df = df[(df['CommandLine'].notna()) & (df['CommandLine'].str.match('.*PoWeRSHeLl.*pS1.*',case=0))][['EventID','ProcessId','Image','CommandLine']]
@@ -67,14 +67,14 @@ And the result shows the execution of the exercise file we used in the last post
 ```
 
 
-# Usecase: Create Process Tree
+## Usecase: Create Process Tree
 Another thing we can try now is to create a process tree to show the relationships between the processes.
 In order to create a process tree, we will need 2 things:
 - identify root nodes, these nodes (processes) don't have a parent, this can be either due to missing data, or because thats the first process created by the OS.
 - Create list of children of each node: this will allow us to create the parent-child relationship
 
 
-## The firs step: Prepare the data
+### The firs step: Prepare the data
 In this step will check what nodes are missing from our data ,and we will select a subset of filed to use in the process tree
 ```
 # List to store all the nodes
@@ -95,7 +95,7 @@ for i in df[df['EventID'] == "1" ].itertuples():
 
 
 
-## The second step: Create the parent-child relationship
+### The second step: Create the parent-child relationship
 
 ```
 roots = []
@@ -114,7 +114,7 @@ for i in nodes:
 
 This code will create a list of roots, nodes without a parent in our set of data. And it will create a list of children for each parent
 
-## The third step: Print the tree
+### The third step: Print the tree
 Now, we have every thing ready, we just need to print the data using recursion. Recursion is used in order to print the data in the required order, we need to print the root, then the first child, then the first child of the first child, and so on...
 ```
 root
