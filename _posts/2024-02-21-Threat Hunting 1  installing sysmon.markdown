@@ -2,7 +2,7 @@
 title: "Threat Hunting with sysmon 101 part 1: sysmon installation"
 date: 2024-02-21 11:40:00 +0200
 categories: Threat_hunting
-description: Threat hunting with sysmon 
+description: In this post we will download and install sysmon tool to start logging activity on a vm to start our threat hunting journey. 
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
