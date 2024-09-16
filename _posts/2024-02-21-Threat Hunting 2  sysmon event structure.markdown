@@ -2,7 +2,7 @@
 title: "Threat Hunting with sysmon 101 part 2: Process creation event"
 date: 2024-02-21 11:40:00 +0200
 categories: Threat_hunting
-description: Threat hunting with sysmon 
+description: Process creation events are one of the most important events to investigate, we will examine the different data fields that are logged by sysmon in this event.
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
