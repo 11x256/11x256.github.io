@@ -35,3 +35,8 @@ This command installs Sysmon as a Windows service and accepts the end-user licen
 ![test sysmon](/assets/images/th1/3.png)
 
 
+## Threat Hunting posts
+- https://infosec-blog.com/threat_hunting/Threat-Hunting-1-installing-sysmon/
+- https://infosec-blog.com/threat_hunting/Threat-Hunting-2-sysmon-event-structure/
+- https://infosec-blog.com/threat_hunting/Threat-Hunting-3-command-line-investigation/
+- https://infosec-blog.com/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/
