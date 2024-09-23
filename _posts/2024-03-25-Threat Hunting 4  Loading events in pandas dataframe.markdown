@@ -6,7 +6,7 @@ description: Threat hunting with sysmon
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-# Loading sysmon events in pandas dataframe
+## Loading sysmon events in pandas dataframe
 In the past article, we used powershell scripting to filter the events and perform basic querying, in this article we will load sysmon logs into python, and explore some powerful queries that we can apply to our data to gain better understanding of it.
 
 ## Exporting events to xml
@@ -185,7 +185,7 @@ Which would print something like this, based on what you choose to print
 
 
 ## Threat Hunting posts
-- [Part 1 - Installing sysmon](/Threat-Hunting-1-installing-sysmon/)
-- [Part 2 - Sysmon event structure](/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
-- [Part 3 - Command line investigation](/Threat-Hunting-3-command-line-investigation/)
-- [Part 4- Loading sysmon events in python](/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
+- [Part 1 - Installing sysmon](https://infosec-blog.com/threat_hunting/Threat-Hunting-1-installing-sysmon/)
+- [Part 2 - Sysmon event structure](https://infosec-blog.com/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
+- [Part 3 - Command line investigation](https://infosec-blog.com/threat_hunting/Threat-Hunting-3-command-line-investigation/)
+- [Part 4- Loading sysmon events in python](https://infosec-blog.com/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
