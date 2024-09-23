@@ -6,7 +6,7 @@ description: Process creation events are one of the most important events to inv
 tags: Threat hunting sysmon Threat-hunting windows logs ELK
 published: true
 ---
-# Threat Hunting with sysmon: Process creation event
+## Threat Hunting with sysmon: Process creation event
 
 In this article, we'll explore the structure of process creation event (event_id == 1).
 
@@ -66,7 +66,7 @@ PS C:\Users\abdo-pc\Downloads\Sysmon>
 Some of the fields in the output are more important than other from the prespective of threat hunting, for example, commandline can have valuable information , as we will see in the next post.
 
 ## Threat Hunting posts
-- [Part 1 - Installing sysmon](/Threat-Hunting-1-installing-sysmon/)
-- [Part 2 - Sysmon event structure](/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
-- [Part 3 - Command line investigation](/Threat-Hunting-3-command-line-investigation/)
-- [Part 4- Loading sysmon events in python](/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
+- [Part 1 - Installing sysmon](https://infosec-blog.com/threat_hunting/Threat-Hunting-1-installing-sysmon/)
+- [Part 2 - Sysmon event structure](https://infosec-blog.com/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
+- [Part 3 - Command line investigation](https://infosec-blog.com/threat_hunting/Threat-Hunting-3-command-line-investigation/)
+- [Part 4- Loading sysmon events in python](https://infosec-blog.com/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
