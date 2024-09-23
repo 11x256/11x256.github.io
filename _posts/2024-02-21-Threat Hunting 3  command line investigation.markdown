@@ -234,3 +234,9 @@ ub.io/test/assets/exercise/th3/1.ps1'))
 ParentUser: DESKTOP-D3OJRQ4\abdo-pc
 ***************************************************
 ```
+
+## Threat Hunting posts
+- [Part 1 - Installing sysmon](/Threat-Hunting-1-installing-sysmon/)
+- [Part 2 - Sysmon event structure](/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
+- [Part 3 - Command](/Threat-Hunting-3-command-line-investigation/)
+- [Part 4- Loading sysmon events in python](/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
