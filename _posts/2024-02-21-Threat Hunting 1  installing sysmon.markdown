@@ -36,7 +36,7 @@ This command installs Sysmon as a Windows service and accepts the end-user licen
 
 
 ## Threat Hunting posts
-- [Part 1 - Installing sysmon](/threat_hunting/Threat-Hunting-1-installing-sysmon/)
-- [Part 2 - Sysmon event structure](/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
-- [Part 3 - Command line investigation](/threat_hunting/Threat-Hunting-3-command-line-investigation/)
-- [Part 4- Loading sysmon events in python](/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
+- [Part 1 - Installing sysmon](https://infosec-blog.com/threat_hunting/Threat-Hunting-1-installing-sysmon/)
+- [Part 2 - Sysmon event structure](https://infosec-blog.com/threat_hunting/Threat-Hunting-2-sysmon-event-structure/)
+- [Part 3 - Command line investigation](https://infosec-blog.com/threat_hunting/Threat-Hunting-3-command-line-investigation/)
+- [Part 4- Loading sysmon events in python](https://infosec-blog.com/threat_hunting/Threat-Hunting-4-Loading-events-in-pandas-dataframe/)
