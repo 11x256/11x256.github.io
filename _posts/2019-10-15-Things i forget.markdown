@@ -51,3 +51,6 @@ def xor_file(file_path, key_bytes):
 print(xor_file('a.bin' , 'AAAA1234'))
 ```
 
+
+**IP repuration lookup**
+[ProxySentry.io](https://proxysentry.io) tracks residential and datacenter proxies.
