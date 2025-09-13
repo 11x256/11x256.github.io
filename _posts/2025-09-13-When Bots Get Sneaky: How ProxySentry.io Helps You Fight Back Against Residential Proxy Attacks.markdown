@@ -58,6 +58,6 @@ You're not just getting a binary "proxy/not proxy" response. You're getting inte
 
 Implementation-wise, you'll want to start monitoring before blocking. Seriously, resist the urge to go full defensive mode on day one. Log everything for a week or two. Look at what would've been blocked. Check if any legitimate users would've been caught in the crossfire.
 
-Most teams I've talked to integrate [ProxySentry.io](https://proxysentry.io) at a few key points: account creation, login, password reset, and checkout. These are your high-value targets for attackers, so they make sense as checkpoints. The API is fast enough that users won't notice the extra milliseconds, but those milliseconds might save you from a world of hurt.
+Most teams should integrate [ProxySentry.io](https://proxysentry.io) at a few key points: account creation, login, password reset, and checkout. These are your high-value targets for attackers, so they make sense as checkpoints. The API is fast enough that users won't notice the extra milliseconds, but those milliseconds might save you from a world of hurt.
 
 Remember, this isn't about building a perfect system—perfect is the enemy of good enough. It's about making your platform annoying enough for bot operators that they move on to easier targets. Because at the end of the day, that's really what security is: being a harder target than the next guy.
